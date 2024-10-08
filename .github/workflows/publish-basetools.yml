@@ -235,7 +235,7 @@ jobs:
       - run: |
           tar xf basetools-${{ needs.check.outputs.release-version }}-linux-x86_64.tar.xz
 
-          printf '```yaml\n' > notes.md
+          printf 'included softwares:\n```yaml\n' > notes.md
 
           for fp in basetools-${{ needs.check.outputs.release-version }}-linux-x86_64/*.yml
           do
